@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:version='2' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta charset='utf-8'/>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+<meta content='Katiadi Government College - EIIN 110434, Katiadi, Kishoreganj, Bangladesh. Official notices, admission, results, routines, departments and news.' name='description'/>
+<meta content='Katiadi Government College, কাটিয়াদী সরকারি কলেজ, EIIN 110434, Katiadi, Kishoreganj, college notice, admission, result' name='keywords'/>
+<meta content='Katiadi Government College' property='og:site_name'/>
+<meta expr:content='data:blog.pageTitle' property='og:title'/>
+<meta content='website' property='og:type'/>
+<meta expr:content='data:blog.url' property='og:url'/>
+<b:if cond='data:blog.metaDescription'>
+<meta expr:content='data:blog.metaDescription' property='og:description'/>
+<meta expr:content='data:blog.metaDescription' name='description'/>
+</b:if>
+<b:if cond='data:blog.postImageUrl'>
+<meta expr:content='data:blog.postImageUrl' property='og:image'/>
+</b:if>
+<link expr:href='data:blog.canonicalUrl' rel='canonical'/>
+<title><data:blog.pageTitle/></title>
+<link href='https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&amp;family=Noto+Serif+Bengali:wght@600;700;800&amp;display=swap' rel='stylesheet'/>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' rel='stylesheet'/>
+<b:skin><![CDATA[
+/* ============================================================
+   KATIADI GOVERNMENT COLLEGE — Blogger Theme v1.0
+   EIIN 110434 | Katiadi, Kishoreganj, Bangladesh
+   Colours: Premium Blue #0b3d91 / #1450a0 + White
+   Fonts: Hind Siliguri + Noto Serif Bengali
+   Verified facts only. All other details are placeholders.
+   ============================================================ */
+:root{
+  --blue:#0b3d91; --blue2:#1450a0; --blue3:#1e63c8; --sky:#eaf2ff; --sky2:#dbeafe;
+  --navy:#071f4a; --ink:#0f2340; --muted:#5b6b84; --line:#dbe4f0; --bg:#f4f7fc; --card:#ffffff;
+  --gold:#f5b301; --green:#0e9f6e; --red:#d92d20; --radius:16px; --shadow:0 10px 30px rgba(11,61,145,.10);
+  --shadow-sm:0 4px 14px rgba(11,61,145,.08);
+}
+[data-theme="dark"]{
+  --blue:#3b82f6; --blue2:#60a5fa; --blue3:#93c5fd; --sky:#0f2340; --sky2:#132c52;
+  --navy:#020617; --ink:#e8eef7; --muted:#a8b6cc; --line:#22345a; --bg:#0a1226; --card:#0f1e3d;
+  --shadow:0 10px 30px rgba(0,0,0,.45); --shadow-sm:0 4px 14px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Hind Siliguri',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:16px}
+a{color:var(--blue2);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3,h4{font-family:'Noto Serif Bengali','Hind Siliguri',serif;line-height:1.3;margin:0 0 10px}
+.container{max-width:1180px;margin:0 auto;padding:0 18px}
+.section{padding:52px 0}
+.section-head{text-align:center;margin-bottom:30px}
+.section-head .eyebrow{display:inline-block;background:var(--sky);color:var(--blue);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:10px}
+.section-head h2{font-size:30px;color:var(--blue);margin:0}
+.section-head p{color:var(--muted);max-width:680px;margin:8px auto 0}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff!important;padding:11px 20px;border-radius:999px;font-weight:700;border:0;cursor:pointer;text-decoration:none!important;transition:.2s}
+.btn:hover{background:var(--blue3);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--blue)!important;border:2px solid var(--blue)}
+.btn-outline:hover{background:var(--blue);color:#fff!important}
+.btn-gold{background:var(--gold);color:#1a1000!important}
+.placeholder-note{background:#fff8db;border:1px dashed #d9a400;color:#6b4e00;padding:10px 14px;border-radius:10px;font-size:14px;margin:12px 0}
+[data-theme="dark"] .placeholder-note{background:#2a2300;color:#ffe58a;border-color:#8a6d00}
+/* Top bar */
+.topbar{background:var(--navy);color:#dbeafe;font-size:13.5px}
+.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.topbar a{color:#fff}
+.topbar span{margin-right:16px;white-space:nowrap}
+.topbar i{color:var(--gold);margin-right:6px}
+/* Header */
+.site-header{background:var(--card);border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:90;box-shadow:var(--shadow-sm)}
+.header-inner{display:flex;align-items:center;gap:16px;padding:14px 18px;max-width:1180px;margin:0 auto}
+.logo{width:68px;height:68px;min-width:68px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue3));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;line-height:1.05;border:3px solid var(--gold)}
+.logo b{font-size:20px;letter-spacing:.02em}
+.logo small{font-size:11px;font-weight:700}
+.brand{flex:1;min-width:0}
+.brand h1{font-size:26px;color:var(--blue);margin:0;line-height:1.15}
+.brand h1 .en{display:block;font-family:'Hind Siliguri',sans-serif;font-size:15px;font-weight:600;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.brand .eiin{font-size:13px;color:var(--muted);font-weight:600}
+.header-actions{display:flex;align-items:center;gap:10px}
+.theme-toggle,.menu-toggle{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--sky);color:var(--blue);cursor:pointer;font-size:17px;display:flex;align-items:center;justify-content:center}
+.menu-toggle{display:none}
+/* Nav */
+.main-nav{background:var(--blue)}
+.main-nav .container{display:flex;align-items:center;gap:2px;flex-wrap:wrap;padding-top:0;padding-bottom:0}
+.main-nav a{color:#fff;padding:12px 13px;font-weight:600;font-size:15px;text-decoration:none!important;white-space:nowrap}
+.main-nav a:hover,.main-nav a.active{background:rgba(255,255,255,.16)}
+.main-nav a i{margin-right:6px;font-size:13px}
+/* Hero */
+.hero{background:linear-gradient(120deg,var(--navy) 0%,var(--blue) 58%,var(--blue3) 100%);color:#fff;padding:58px 0 66px;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;right:-80px;top:-80px;width:340px;height:340px;border:48px solid rgba(255,255,255,.07);border-radius:50%}
+.hero .container{position:relative;z-index:2;display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:center}
+.hero .badge{display:inline-block;background:var(--gold);color:#1a1000;font-weight:700;padding:6px 14px;border-radius:999px;font-size:13px;margin-bottom:14px}
+.hero h2{font-size:42px;line-height:1.2;color:#fff;margin:0 0 12px}
+.hero p{color:#dbeafe;font-size:17px;max-width:620px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.hero-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(6px);border-radius:var(--radius);padding:22px;color:#fff}
+.hero-card h3{color:#fff;font-size:19px}
+.hero-card ul{list-style:none;padding:0;margin:0}
+.hero-card li{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.18);display:flex;gap:10px}
+.hero-card li:last-child{border-bottom:0}
+.hero-card i{color:var(--gold)}
+/* Ticker */
+.ticker{background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:stretch}
+[data-theme="dark"] .ticker{background:var(--card)}
+.ticker-label{background:var(--red);color:#fff;font-weight:700;padding:11px 16px;white-space:nowrap;display:flex;align-items:center;gap:8px}
+.ticker-track{overflow:hidden;flex:1;display:flex;align-items:center}
+.ticker-track marquee{width:100%;font-weight:600;color:var(--ink)}
+.ticker-track a{color:var(--blue2);margin-right:28px}
+/* Layout */
+.layout{display:grid;grid-template-columns:1fr 330px;gap:28px;padding:28px 0 10px;align-items:start}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}
+.card-body{padding:20px}
+/* Post cards */
+.post-card{margin-bottom:22px}
+.post-card .thumb{height:210px;overflow:hidden;background:var(--sky)}
+.post-card .thumb img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.post-card:hover .thumb img{transform:scale(1.05)}
+.post-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;color:var(--muted);margin-bottom:8px}
+.post-meta .label-chip{background:var(--sky);color:var(--blue);font-weight:700;padding:3px 10px;border-radius:999px;font-size:12px}
+.post-meta .label-chip a{color:var(--blue)}
+.post-title{font-size:22px;line-height:1.35}
+.post-title a{color:var(--ink)}
+.post-title a:hover{color:var(--blue2)}
+.post-snippet{color:var(--muted);margin:8px 0 14px}
+.post-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:14px}
+.read-more{font-weight:700}
+.share a{display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--sky);color:var(--blue);align-items:center;justify-content:center;margin-left:6px;text-decoration:none!important}
+.share a:hover{background:var(--blue);color:#fff}
+/* Single post */
+.post-body{font-size:17px}
+.post-body img{border-radius:12px;margin:14px 0}
+.post-body table{width:100%;border-collapse:collapse;margin:16px 0}
+.post-body th,.post-body td{border:1px solid var(--line);padding:9px 10px;text-align:left}
+.post-body th{background:var(--sky);color:var(--blue)}
+.pdf-link{display:inline-flex;align-items:center;gap:8px;background:#fef2f2;color:#b42318;border:1px solid #fecdca;padding:9px 14px;border-radius:10px;font-weight:700;margin:6px 0}
+.pdf-link i{color:#d92d20}
+/* Pagination */
+.pager{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:26px 0}
+.pager a{background:var(--card);border:1px solid var(--line);padding:10px 18px;border-radius:999px;font-weight:700;color:var(--blue);text-decoration:none!important}
+.pager a:hover{background:var(--blue);color:#fff}
+/* Sidebar widgets */
+.widget{margin-bottom:22px}
+.widget h3{font-size:18px;color:#fff;background:var(--blue);margin:0;padding:13px 18px}
+.widget h3 i{margin-right:8px;color:var(--gold)}
+.widget .widget-content{padding:16px 18px}
+.widget ul{list-style:none;padding:0;margin:0}
+.widget li{padding:9px 0;border-bottom:1px solid var(--line)}
+.widget li:last-child{border-bottom:0}
+.widget li a{color:var(--ink);font-weight:600}
+.search-box{display:flex}
+.search-box input{flex:1;border:1px solid var(--line);border-right:0;border-radius:10px 0 0 10px;padding:11px 12px;font-family:inherit;background:var(--card);color:var(--ink)}
+.search-box button{background:var(--blue);color:#fff;border:0;border-radius:0 10px 10px 0;padding:0 16px;cursor:pointer}
+/* Grids */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.dept-card,.teacher-card,.link-card{text-align:center;padding:26px 18px;transition:.25s}
+.dept-card:hover,.teacher-card:hover,.link-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.dept-icon{width:64px;height:64px;margin:0 auto 14px;border-radius:50%;background:var(--sky);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:26px}
+.dept-card h3{font-size:19px;color:var(--blue)}
+.teacher-avatar{width:88px;height:88px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue3));color:#fff;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:700;margin:0 auto 12px}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gallery-grid figure{margin:0;border-radius:14px;overflow:hidden;position:relative;height:180px}
+.gallery-grid img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.gallery-grid figure:hover img{transform:scale(1.07)}
+.gallery-grid figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;padding:28px 12px 10px;font-size:14px;font-weight:600}
+.notice-list{list-style:none;padding:0;margin:0}
+.notice-list li{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.notice-list li:last-child{border-bottom:0}
+.notice-date{min-width:62px;text-align:center;background:var(--sky);border-radius:12px;padding:8px 6px;color:var(--blue);font-weight:700;line-height:1.2}
+.notice-date span{display:block;font-size:12px;color:var(--muted)}
+.notice-list a{font-weight:700;color:var(--ink);font-size:16px}
+/* Info / principal */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.principal-card{text-align:center;padding:28px}
+.principal-card .teacher-avatar{width:120px;height:120px;font-size:42px}
+.map-wrap iframe{width:100%;height:340px;border:0;border-radius:var(--radius)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.form-note{font-size:14px;color:var(--muted)}
+/* Footer */
+.site-footer{background:var(--navy);color:#cbd8f0;margin-top:48px}
+.site-footer .container{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;padding:44px 18px 28px}
+.site-footer h3{color:#fff;font-size:18px}
+.site-footer a{color:#cbd8f0}
+.site-footer ul{list-style:none;padding:0;margin:0}
+.site-footer li{padding:5px 0}
+.social a{display:inline-flex;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;align-items:center;justify-content:center;margin-right:8px;text-decoration:none!important}
+.social a:hover{background:var(--gold);color:#111}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.14);text-align:center;padding:16px;font-size:13.5px;color:#94a8c8}
+/* 404 */
+.notfound{text-align:center;padding:60px 20px}
+.notfound h2{font-size:56px;color:var(--blue);margin:0}
+/* Responsive */
+@media (max-width:960px){
+  .layout{grid-template-columns:1fr}
+  .hero .container{grid-template-columns:1fr}
+  .hero h2{font-size:32px}
+  .grid-3,.grid-4,.gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .split,.contact-grid{grid-template-columns:1fr}
+  .site-footer .container{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .brand h1{font-size:20px}
+  .brand h1 .en{font-size:12px}
+  .logo{width:54px;height:54px;min-width:54px}
+  .logo b{font-size:16px}
+  .menu-toggle{display:flex}
+  .main-nav .container{display:none;flex-direction:column;align-items:stretch}
+  .main-nav.open .container{display:flex}
+  .main-nav a{border-top:1px solid rgba(255,255,255,.12)}
+  .grid-3,.grid-4,.gallery-grid{grid-template-columns:1fr}
+  .section-head h2{font-size:24px}
+  .topbar .hide-m{display:none}
+  .site-footer .container{grid-template-columns:1fr}
+  .hero{padding:38px 0 44px}
+}
+]]></b:skin>
+<b:template-skin><![CDATA[
+/* Blogger template skin — widget spacing kept minimal; main styling is in b:skin above. */
+.widget{margin-bottom:22px}
+]]></b:template-skin>
+<b:if cond='data:blog.isMobileRequest'>
+<meta content='width=device-width,initial-scale=1' name='viewport'/>
+</b:if>
+</head>
+<body>
+<div class='topbar'><div class='container'>
+<div><span><i class='fa-solid fa-location-dot'/>কাটিয়াদী, কিশোরগঞ্জ, বাংলাদেশ</span><span class='hide-m'><i class='fa-solid fa-id-card'/>EIIN: 110434</span></div>
+<div><span><i class='fa-solid fa-language'/>বাংলা | English</span><span><a href='#contact'>যোগাযোগ</a></span><button class='theme-toggle' id='themeToggleTop' type='button' title='Dark / Light mode' aria-label='Toggle dark mode'><i class='fa-solid fa-moon'/></button></div>
+</div></div>
+
+<header class='site-header'>
+<div class='header-inner'>
+<div class='logo' aria-label='Katiadi Government College logo'><b>কসক</b><small>KGC</small></div>
+<div class='brand'>
+<h1>কাটিয়াদী সরকারি কলেজ<span class='en'>Katiadi Government College</span></h1>
+<div class='eiin'>EIIN: 110434 &amp;bull; কাটিয়াদী, কিশোরগঞ্জ &amp;bull; স্থাপিত: তথ্য যাচাই করা হয়নি</div>
+</div>
+<div class='header-actions'>
+<a class='btn hide-m' href='/search/label/Admission%20Notices' style='white-space:nowrap'>ভর্তি তথ্য</a>
+<button class='theme-toggle' id='themeToggle' type='button' title='Dark / Light mode' aria-label='Toggle dark mode'><i class='fa-solid fa-circle-half-stroke'/></button>
+<button class='menu-toggle' id='menuToggle' type='button' aria-label='Open menu'><i class='fa-solid fa-bars'/></button>
+</div>
+</div>
+<b:section class='header-section' id='header' maxwidgets='1' showaddelement='no'>
+<b:widget id='Header1' locked='true' title='Katiadi Government College (Header)' type='Header' version='2'>
+<b:widget-settings>
+<b:widget-setting name='displayUrl'>https://www.blogger.com</b:widget-setting>
+</b:widget-settings>
+<b:includable id='main'>
+<b:if cond='data:blog.displayTitle'>
+<div class='header-widget' style='display:none'><data:title/></div>
+</b:if>
+</b:includable>
+</b:widget>
+</b:section>
+</header>
+
+<nav class='main-nav' id='mainNav' aria-label='Main navigation'>
+<div class='container'>
+<a class='active' href='/'><i class='fa-solid fa-house'/>হোম</a>
+<a href='/p/about-college.html'>কলেজ সম্পর্কে</a>
+<a href='/p/principals-message.html'>অধ্যক্ষের বাণী</a>
+<a href='/p/departments.html'>বিভাগসমূহ</a>
+<a href='/p/admission.html'>ভর্তি</a>
+<a href='/search/label/Notice'>নোটিশ বোর্ড</a>
+<a href='/search/label/Results'>ফলাফল</a>
+<a href='/p/teachers-staff.html'>শিক্ষক ও কর্মচারী</a>
+<a href='/p/photo-gallery.html'>গ্যালারি</a>
+<a href='/p/contact-us.html'>যোগাযোগ</a>
+</div>
+</nav>
+
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<section class='hero'>
+<div class='container'>
+<div>
+<span class='badge'>EIIN 110434 &amp;bull; কাটিয়াদী, কিশোরগঞ্জ</span>
+<h2>জ্ঞান, শৃঙ্খলা ও মানবিক<br/>মূল্যবোধে গড়ে উঠুক<br/>আগামীর প্রজন্ম</h2>
+<p>কাটিয়াদী সরকারি কলেজ — কিশোরগঞ্জ জেলার কাটিয়াদীতে অবস্থিত একটি সরকারি শিক্ষা প্রতিষ্ঠান। এখানে নোটিশ, ভর্তি তথ্য, রুটিন, ফলাফল ও সর্বশেষ খবর নিয়মিত প্রকাশ করা হয়।</p>
+<div class='hero-actions'>
+<a class='btn btn-gold' href='/p/admission.html'>ভর্তির তথ্য দেখুন</a>
+<a class='btn btn-outline' href='/search/label/Notice' style='color:#fff!important;border-color:#fff'>সর্বশেষ নোটিশ</a>
+</div>
+<p style='font-size:13px;margin-top:16px;color:#cfe0ff'>⚠️ অধ্যক্ষের নাম, শিক্ষক তালিকা, ইতিহাসের তারিখ, ফোন ও ইমেইল — যাচাই করা হয়নি; নিচে “তথ্য যাচাই করা হয়নি” হিসেবে চিহ্নিত।</p>
+</div>
+<aside class='hero-card' aria-label='Quick links'>
+<h3>দ্রুত লিংক</h3>
+<ul>
+<li><i class='fa-solid fa-bullhorn'/><a href='/search/label/Important%20Announcements' style='color:#fff'>জরুরি ঘোষণা</a></li>
+<li><i class='fa-solid fa-calendar-days'/><a href='/p/class-routine.html' style='color:#fff'>ক্লাস রুটিন</a></li>
+<li><i class='fa-solid fa-file-lines'/><a href='/p/examination-routine.html' style='color:#fff'>পরীক্ষার রুটিন</a></li>
+<li><i class='fa-solid fa-graduation-cap'/><a href='/p/academic-programs.html' style='color:#fff'>একাডেমিক প্রোগ্রাম</a></li>
+<li><i class='fa-solid fa-images'/><a href='/p/photo-gallery.html' style='color:#fff'>ফটো গ্যালারি</a></li>
+</ul>
+</aside>
+</div>
+</section>
+
+<div class='ticker' role='region' aria-label='Breaking notice ticker'>
+<div class='ticker-label'><i class='fa-solid fa-bolt'/>জরুরি নোটিশ</div>
+<div class='ticker-track'>
+<b:section class='ticker-section' id='ticker' maxwidgets='1' showaddelement='no'>
+<b:widget id='HTML900' locked='false' title='Breaking Notice Ticker' type='HTML' version='2'>
+<b:includable id='main'>
+<marquee behavior='scroll' direction='left' scrollamount='4'>
+<a href='/search/label/Important%20Announcements'>জরুরি ঘোষণা দেখতে এখানে ক্লিক করুন</a>
+<a href='/search/label/Admission%20Notices'>ভর্তি সংক্রান্ত নোটিশ</a>
+<a href='/search/label/Examination%20Notices'>পরীক্ষা সংক্রান্ত নোটিশ</a>
+<a href='/search/label/Notice'>সকল নোটিশ</a>
+</marquee>
+<div class='placeholder-note' style='margin:8px'>টিকারটি স্বয়ংক্রিয়ভাবে আপডেট হয় যখন আপনি “Important Announcements” লেবেল দিয়ে পোস্ট প্রকাশ করেন। এখনো কোনো পোস্ট না থাকলে উপরের লিংকগুলো খালি তালিকা দেখাবে — এটি স্বাভাবিক।</div>
+</b:includable>
+</b:widget>
+</b:section>
+</div>
+</div>
+</b:if>
+
+<div class='container layout'>
+<main>
+<b:section class='main-section' id='main' showaddelement='no'>
+<b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2'>
+<b:widget-settings>
+<b:widget-setting name='showDateHeader'>false</b:widget-setting>
+<b:widget-setting name='showShareButtons'>true</b:widget-setting>
+</b:widget-settings>
+<b:includable id='main' var='top'>
+<b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+<div class='card notfound'>
+<h2>404</h2>
+<h3>দুঃখিত, পৃষ্ঠাটি পাওয়া যায়নি</h3>
+<p>আপনি যে পৃষ্ঠাটি খুঁজছেন তা নেই বা সরিয়ে নেওয়া হয়েছে। অনুগ্রহ করে হোমপেজে ফিরে যান অথবা সার্চ ব্যবহার করুন।</p>
+<p><a class='btn' href='/'>হোমপেজে ফিরুন</a> <a class='btn btn-outline' href='/search/label/Notice'>নোটিশ দেখুন</a></p>
+</div>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+<b:loop values='data:posts' var='post'>
+<article class='card post-card'><div class='card-body'>
+<h1 class='post-title' style='font-size:28px'><data:post.title/></h1>
+<div class='post-meta'><span><i class='fa-regular fa-calendar'/> <data:post.dateHeader/></span></div>
+<div class='post-body'><data:post.body/></div>
+<div class='post-footer'><a class='btn' href='/'>← হোমপেজ</a><div class='share'>শেয়ার: <a expr:href='&quot;https://www.facebook.com/sharer/sharer.php?u=&quot; + data:post.url' target='_blank' rel='noopener' aria-label='Share on Facebook'><i class='fa-brands fa-facebook-f'/></a><a expr:href='&quot;https://twitter.com/intent/tweet?url=&quot; + data:post.url' target='_blank' rel='noopener' aria-label='Share on X'><i class='fa-brands fa-x-twitter'/></a><a expr:href='&quot;https://api.whatsapp.com/send?text=&quot; + data:post.url' target='_blank' rel='noopener' aria-label='Share on WhatsApp'><i class='fa-brands fa-whatsapp'/></a></div></div>
+</div></article>
+</b:loop>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<b:loop values='data:posts' var='post'>
+<article class='card post-card'><div class='card-body'>
+<div class='post-meta'>
+<b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'><span class='label-chip'><a expr:href='data:label.url'><data:label.name/></a></span></b:loop></b:if>
+<span><i class='fa-regular fa-calendar'/> <data:post.dateHeader/></span>
+<span><i class='fa-regular fa-user'/> <data:post.author/></span>
+</div>
+<h1 class='post-title' style='font-size:28px'><data:post.title/></h1>
+<div class='post-body'><data:post.body/></div>
+<p class='form-note'>PDF ডাউনলোড: পোস্টের ভেতরে দেওয়া PDF লিংকে ক্লিক করলে ফাইলটি নতুন ট্যাবে খুলবে। PDF লিংক Google Drive-এ আপলোড করে “Anyone with the link” শেয়ার করে পোস্টে যোগ করুন।</p>
+<div class='post-footer'>
+<a class='btn btn-outline' href='/'>← সকল নোটিশ</a>
+<div class='share'>শেয়ার করুন:
+<a expr:href='&quot;https://www.facebook.com/sharer/sharer.php?u=&quot; + data:post.url' target='_blank' rel='noopener' aria-label='Share on Facebook'><i class='fa-brands fa-facebook-f'/></a>
+<a expr:href='&quot;https://twitter.com/intent/tweet?url=&quot; + data:post.url' target='_blank' rel='noopener' aria-label='Share on X'><i class='fa-brands fa-x-twitter'/></a>
+<a expr:href='&quot;https://api.whatsapp.com/send?text=&quot; + data:post.url' target='_blank' rel='noopener' aria-label='Share on WhatsApp'><i class='fa-brands fa-whatsapp'/></a>
+</div></div>
+</div></article>
+<b:include data='post' name='comments'/>
+</b:loop>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;index&quot;'>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<div class='card' style='margin-bottom:22px'><div class='card-body'>
+<div class='section-head' style='margin-bottom:8px;text-align:left'><span class='eyebrow'>কলেজ পরিচিতি</span><h2>কাটিয়াদী সরকারি কলেজ সম্পর্কে</h2></div>
+<p>কাটিয়াদী সরকারি কলেজ কিশোরগঞ্জ জেলার কাটিয়াদীতে অবস্থিত একটি সরকারি কলেজ (EIIN 110434)। এই ওয়েবসাইটে কলেজের নোটিশ, ভর্তি, রুটিন, ফলাফল, বিভাগ ও সংবাদ নিয়মিত আপডেট করা হয়। বিস্তারিত জানতে <a href='/p/about-college.html'>কলেজ সম্পর্কে</a> ও <a href='/p/college-history.html'>ইতিহাস</a> পাতা দেখুন।</p>
+<p class='placeholder-note'>⚠️ প্রতিষ্ঠার সাল, অধ্যক্ষের নাম, শিক্ষক সংখ্যা, শিক্ষার্থী সংখ্যা ও যোগাযোগের নম্বর — তথ্য যাচাই করা হয়নি। যাচাই করা তথ্য পেলে SETUP-CONTENT.md অনুযায়ী পাতাগুলো আপডেট করুন।</p>
+<a class='btn' href='/p/about-college.html'>আরও জানুন</a>
+</div></div>
+</b:if>
+<b:if cond='data:blog.searchLabel'>
+<div class='card' style='margin-bottom:22px'><div class='card-body'>
+<h2 style='margin:0'>বিভাগ: <data:blog.searchLabel/></h2>
+<p class='form-note'>নিচে এই লেবেলের সব পোস্ট দেখানো হচ্ছে। লেবেল পরিবর্তন করতে উপরের নেভিগেশন বা সাইডবারের লেবেল তালিকা ব্যবহার করুন।</p>
+</div></div>
+</b:if>
+<b:if cond='data:blog.searchQuery'>
+<div class='card' style='margin-bottom:22px'><div class='card-body'><h2 style='margin:0'>সার্চ ফলাফল: “<data:blog.searchQuery/>”</h2></div></div>
+</b:if>
+<b:loop values='data:posts' var='post'>
+<article class='card post-card'>
+<b:if cond='data:post.featuredImage'>
+<div class='thumb'><a expr:href='data:post.url'><img expr:alt='data:post.title' expr:src='data:post.featuredImage'/></a></div>
+</b:if>
+<div class='card-body'>
+<div class='post-meta'>
+<b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'><span class='label-chip'><a expr:href='data:label.url'><data:label.name/></a></span></b:loop></b:if>
+<span><i class='fa-regular fa-calendar'/> <data:post.dateHeader/></span>
+</div>
+<h2 class='post-title'><a expr:href='data:post.url'><data:post.title/></a></h2>
+<div class='post-snippet'><data:post.snippet/></div>
+<div class='post-footer'>
+<a class='read-more' expr:href='data:post.url'>বিস্তারিত পড়ুন →</a>
+<div class='share'>
+<a expr:href='&quot;https://www.facebook.com/sharer/sharer.php?u=&quot; + data:post.url' target='_blank' rel='noopener' aria-label='Share on Facebook'><i class='fa-brands fa-facebook-f'/></a>
+<a expr:href='&quot;https://api.whatsapp.com/send?text=&quot; + data:post.url' target='_blank' rel='noopener' aria-label='Share on WhatsApp'><i class='fa-brands fa-whatsapp'/></a>
+</div></div>
+</div>
+</article>
+</b:loop>
+<b:if cond='data:posts.empty'>
+<div class='card'><div class='card-body notfound'>
+<h3>এখনো কোনো পোস্ট প্রকাশ করা হয়নি</h3>
+<p>অ্যাডমিন Blogger ড্যাশবোর্ড থেকে Posts → New post-এ গিয়ে নোটিশ বা সংবাদ প্রকাশ করলে তা এখানে স্বয়ংক্রিয়ভাবে দেখাবে। শুরু করতে SETUP-CONTENT.md দেখুন।</p>
+<a class='btn' href='/'>হোমপেজে ফিরুন</a>
+</div></div>
+</b:if>
+<div class='pager'>
+<b:if cond='data:newerPageUrl'><a expr:href='data:newerPageUrl'>← নতুন পোস্ট</a></b:if>
+<b:if cond='data:olderPageUrl'><a expr:href='data:olderPageUrl'>পুরনো পোস্ট →</a></b:if>
+</div>
+</b:if>
+</b:includable>
+<b:includable id='comments' var='post'>
+<b:if cond='data:post.allowComments'>
+<div class='card' style='margin-top:18px'><div class='card-body'>
+<h3>মন্তব্য</h3>
+<p class='form-note'>মন্তব্য Blogger-এর নিজস্ব ব্যবস্থায় পরিচালিত হয়। প্রয়োজনে Blogger সেটিংস থেকে মন্তব্য বন্ধ/খোলা যায়।</p>
+<b:include data='post' name='commentList'/>
+<b:include data='post' name='commentForm'/>
+</div></div>
+</b:if>
+</b:includable>
+</b:widget>
+</b:section>
+</main>
+
+<aside>
+<b:section class='sidebar-section' id='sidebar' showaddelement='yes'>
+<b:widget id='BlogSearch1' locked='false' title='খুঁজুন' type='BlogSearch' version='2'>
+<b:includable id='main'>
+<div class='card widget'><h3><i class='fa-solid fa-magnifying-glass'/>খুঁজুন</h3><div class='widget-content'>
+<form action='/search' class='search-box' method='get'><input aria-label='Search' name='q' placeholder='নোটিশ, সংবাদ বা বিষয় খুঁজুন…' type='text'/><button aria-label='Search' type='submit'><i class='fa-solid fa-magnifying-glass'/></button></form>
+<p class='form-note'>উদাহরণ: “ভর্তি”, “ফলাফল”, “রুটিন” লিখে খুঁজুন।</p>
+</div></div>
+</b:includable>
+</b:widget>
+<b:widget id='LinkList900' locked='false' title='নোটিশের বিভাগ' type='LinkList' version='2'>
+<b:includable id='main'>
+<div class='card widget'><h3><i class='fa-solid fa-tags'/>নোটিশের বিভাগ</h3><div class='widget-content'><ul>
+<li><a href='/search/label/General%20Notices'>সাধারণ নোটিশ</a></li>
+<li><a href='/search/label/Admission%20Notices'>ভর্তি নোটিশ</a></li>
+<li><a href='/search/label/Examination%20Notices'>পরীক্ষার নোটিশ</a></li>
+<li><a href='/search/label/Class%20Routine'>ক্লাস রুটিন</a></li>
+<li><a href='/search/label/Results'>ফলাফল</a></li>
+<li><a href='/search/label/Important%20Announcements'>গুরুত্বপূর্ণ ঘোষণা</a></li>
+<li><a href='/search/label/Notice'>সকল নোটিশ</a></li>
+</ul></div></div>
+</b:includable>
+</b:widget>
+<b:widget id='PopularPosts1' locked='false' title='জনপ্রিয়' type='PopularPosts' version='2'>
+<b:includable id='main'>
+<div class='card widget'><h3><i class='fa-solid fa-fire'/>জনপ্রিয় পোস্ট</h3><div class='widget-content'>
+<b:if cond='data:posts.empty'><p class='form-note'>এখনো জনপ্রিয় পোস্টের তথ্য নেই। পোস্ট প্রকাশের পর এটি স্বয়ংক্রিয়ভাবে পূরণ হবে।</p></b:if>
+<ul><b:loop values='data:posts' var='post'><li><a expr:href='data:post.href'><data:post.title/></a></li></b:loop></ul>
+</div></div>
+</b:includable>
+</b:widget>
+<b:widget id='Labels1' locked='false' title='লেবেল' type='Labels' version='2'>
+<b:includable id='main'>
+<div class='card widget'><h3><i class='fa-solid fa-list'/>লেবেল</h3><div class='widget-content'>
+<b:if cond='data:labels.empty'><p class='form-note'>কোনো লেবেল নেই। পোস্টে লেবেল যোগ করলে এখানে দেখাবে।</p></b:if>
+<ul><b:loop values='data:labels' var='label'><li><a expr:href='data:label.url'><data:label.name/></a> (<data:label.count/>)</li></b:loop></ul>
+</div></div>
+</b:includable>
+</b:widget>
+<b:widget id='HTML901' locked='false' title='গুরুত্বপূর্ণ লিংক' type='HTML' version='2'>
+<b:includable id='main'>
+<div class='card widget'><h3><i class='fa-solid fa-link'/>গুরুত্বপূর্ণ লিংক</h3><div class='widget-content'><ul>
+<li><a href='https://dshe.gov.bd' target='_blank' rel='noopener'>মাধ্যমিক ও উচ্চ শিক্ষা অধিদপ্তর (DSHE)</a></li>
+<li><a href='https://educationboard.gov.bd' target='_blank' rel='noopener'>শিক্ষা বোর্ড</a></li>
+<li><a href='https://www.nu.ac.bd' target='_blank' rel='noopener'>জাতীয় বিশ্ববিদ্যালয়</a></li>
+<li><a href='https://moedu.gov.bd' target='_blank' rel='noopener'>শিক্ষা মন্ত্রণালয়</a></li>
+<li><a href='https://www.bangladesh.gov.bd' target='_blank' rel='noopener'>বাংলাদেশ সরকার</a></li>
+</ul><p class='form-note'>উপরের সবগুলোই অফিসিয়াল ডোমেইন। লিংক যাচাই করা হয়েছে (ডোমেইন স্তরে)।</p></div></div>
+</b:includable>
+</b:widget>
+</b:section>
+</aside>
+</div>
+
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<!-- ============ HOMEPAGE STATIC SECTIONS (content below is editable via Pages; cards are placeholders where marked) ============ -->
+<section class='section' style='padding-top:10px'><div class='container'>
+<div class='section-head'><span class='eyebrow'>সর্বশেষ নোটিশ</span><h2>নোটিশ বোর্ড</h2><p>সাধারণ, ভর্তি, পরীক্ষা ও ফলাফল — সব নোটিশ এক জায়গায়। নোটিশ প্রকাশ করলেই এই তালিকা স্বয়ংক্রিয়ভাবে আপডেট হয়।</p></div>
+<div class='card'><div class='card-body'>
+<ul class='notice-list'>
+<li><div class='notice-date'>--<span>---</span></div><div><a href='/search/label/Notice'>সকল নোটিশ দেখুন — লেবেল: Notice</a><div class='form-note'>Blogger-এ পোস্ট প্রকাশ করে লেবেল “Notice” যোগ করুন; তারিখ ও শিরোনাম স্বয়ংক্রিয়ভাবে আসবে।</div></div></li>
+<li><div class='notice-date'>--<span>---</span></div><div><a href='/search/label/Admission%20Notices'>ভর্তি নোটিশ — লেবেল: Admission Notices</a><div class='form-note'>ভর্তি সংক্রান্ত পোস্টে এই লেবেলটি ব্যবহার করুন।</div></div></li>
+<li><div class='notice-date'>--<span>---</span></div><div><a href='/search/label/Examination%20Notices'>পরীক্ষার নোটিশ — লেবেল: Examination Notices</a><div class='form-note'>পরীক্ষার রুটিন ও নির্দেশনা এই লেবেলে প্রকাশ করুন।</div></div></li>
+<li><div class='notice-date'>--<span>---</span></div><div><a href='/search/label/Results'>ফলাফল — লেবেল: Results</a><div class='form-note'>ফলাফল প্রকাশের সময় PDF লিংকসহ পোস্ট করুন।</div></div></li>
+</ul>
+<p style='text-align:center;margin-top:18px'><a class='btn' href='/search/label/Notice'>সব নোটিশ দেখুন →</a></p>
+</div></div>
+</div></section>
+
+<section class='section' style='background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)'><div class='container'>
+<div class='section-head'><span class='eyebrow'>বিভাগসমূহ</span><h2>একাডেমিক বিভাগ</h2><p>নিচের বিভাগগুলো বাংলাদেশের সরকারি কলেজে সাধারণভাবে থাকে — কাটিয়াদী সরকারি কলেজের প্রকৃত বিভাগ তালিকা যাচাই করা হয়নি।</p></div>
+<p class='placeholder-note' style='text-align:center'>⚠️ বিভাগের তালিকা যাচাই করা হয়নি — কলেজ থেকে নিশ্চিত হয়ে SETUP-CONTENT.md অনুযায়ী আপডেট করুন।</p>
+<div class='grid-3'>
+<div class='card dept-card'><div class='dept-icon'><i class='fa-solid fa-flask'/></div><h3>বিজ্ঞান বিভাগ</h3><p>Science — পদার্থবিজ্ঞান, রসায়ন, জীববিজ্ঞান ও গণিত।</p><a href='/p/departments.html'>বিস্তারিত →</a></div>
+<div class='card dept-card'><div class='dept-icon'><i class='fa-solid fa-book-open'/></div><h3>মানবিক বিভাগ</h3><p>Humanities — বাংলা, ইংরেজি, ইতিহাস, অর্থনীতি ও অন্যান্য।</p><a href='/p/departments.html'>বিস্তারিত →</a></div>
+<div class='card dept-card'><div class='dept-icon'><i class='fa-solid fa-briefcase'/></div><h3>ব্যবসায় শিক্ষা বিভাগ</h3><p>Business Studies — হিসাববিজ্ঞান, ব্যবস্থাপনা ও ফিন্যান্স।</p><a href='/p/departments.html'>বিস্তারিত →</a></div>
+</div>
+<div style='text-align:center;margin-top:20px'><a class='btn btn-outline' href='/p/departments.html'>সব বিভাগ ও প্রোগ্রাম দেখুন</a></div>
+</div></section>
+
+<section class='section'><div class='container'>
+<div class='split'>
+<div class='card principal-card'>
+<div class='teacher-avatar'>অ</div>
+<h3>অধ্যক্ষের বাণী</h3>
+<p>“শিক্ষার্থীদের জ্ঞান, শৃঙ্খলা ও মানবিক মূল্যবোধে গড়ে তোলাই আমাদের লক্ষ্য।”</p>
+<p class='placeholder-note'>⚠️ অধ্যক্ষের নাম ও প্রকৃত বাণী যাচাই করা হয়নি। নাম ও বাণী যাচাই করে <a href='/p/principals-message.html'>অধ্যক্ষের বাণী</a> পাতায় বসান। এই উক্তিটি একটি সাধারণ স্থানধারক (placeholder), অফিসিয়াল উক্তি নয়।</p>
+<a class='btn' href='/p/principals-message.html'>পুরো বাণী পড়ুন</a>
+</div>
+<div class='card'><div class='card-body'>
+<h3>শিক্ষক ও কর্মচারী</h3>
+<p>শিক্ষক ও কর্মচারীদের তালিকা যাচাই করা হয়নি। নিচের কার্ডগুলো স্থানধারক — আসল নাম, পদবি, বিভাগ ও ছবি যাচাই করে বসাতে হবে।</p>
+<div class='grid-3' style='grid-template-columns:repeat(3,1fr)'>
+<div style='text-align:center'><div class='teacher-avatar' style='width:64px;height:64px;font-size:22px'>শি</div><b>শিক্ষক ১</b><div class='form-note'>পদবি — যাচাই করা হয়নি</div></div>
+<div style='text-align:center'><div class='teacher-avatar' style='width:64px;height:64px;font-size:22px'>শি</div><b>শিক্ষক ২</b><div class='form-note'>পদবি — যাচাই করা হয়নি</div></div>
+<div style='text-align:center'><div class='teacher-avatar' style='width:64px;height:64px;font-size:22px'>শি</div><b>শিক্ষক ৩</b><div class='form-note'>পদবি — যাচাই করা হয়নি</div></div>
+</div>
+<p style='margin-top:16px'><a class='btn btn-outline' href='/p/teachers-staff.html'>সব শিক্ষক ও কর্মচারী দেখুন</a></p>
+</div></div>
+</div>
+</div></section>
+
+<section class='section' style='padding-top:0'><div class='container'>
+<div class='section-head'><span class='eyebrow'>ক্যাম্পাস</span><h2>ফটো গ্যালারি</h2><p>নিচের ছবিগুলো সাধারণ ক্যাম্পাসের প্রতীকী ছবি (Unsplash) — কলেজের আসল ছবি নয়। আসল ছবি পেলে গ্যালারি পাতায় বদলে দিন।</p></div>
+<div class='gallery-grid'>
+<figure><img alt='College campus building — representative photo' loading='lazy' src='https://images.unsplash.com/photo-1562774053-701939374585?w=800&amp;q=80&amp;auto=format&amp;fit=crop'/><figcaption>ক্যাম্পাস ভবন (প্রতীকী ছবি)</figcaption></figure>
+<figure><img alt='Students studying in a library — representative photo' loading='lazy' src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&amp;q=80&amp;auto=format&amp;fit=crop'/><figcaption>পাঠাগার (প্রতীকী ছবি)</figcaption></figure>
+<figure><img alt='Students on campus — representative photo' loading='lazy' src='https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&amp;q=80&amp;auto=format&amp;fit=crop'/><figcaption>শিক্ষার্থীরা (প্রতীকী ছবি)</figcaption></figure>
+<figure><img alt='Graduation celebration — representative photo' loading='lazy' src='https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&amp;q=80&amp;auto=format&amp;fit=crop'/><figcaption>অনুষ্ঠান (প্রতীকী ছবি)</figcaption></figure>
+</div>
+<p style='text-align:center;margin-top:18px'><a class='btn' href='/p/photo-gallery.html'>গ্যালারি পাতা দেখুন</a></p>
+</div></section>
+
+<section class='section' id='contact' style='padding-top:0'><div class='container'>
+<div class='section-head'><span class='eyebrow'>যোগাযোগ</span><h2>কলেজের অবস্থান ও যোগাযোগ</h2><p>ঠিকানা, ফোন ও ইমেইল যাচাই করা হয়নি — নিচে শুধু যাচাইকৃত অবস্থান (কাটিয়াদী, কিশোরগঞ্জ) দেওয়া হয়েছে।</p></div>
+<div class='contact-grid'>
+<div>
+<div class='card'><div class='card-body'>
+<p><i class='fa-solid fa-location-dot'/> <b>ঠিকানা:</b> কাটিয়াদী, কিশোরগঞ্জ, বাংলাদেশ<br/><span class='form-note'>পূর্ণ ঠিকানা (রাস্তা/ডাকঘর/পোস্টকোড) — যাচাই করা হয়নি।</span></p>
+<p><i class='fa-solid fa-id-card'/> <b>EIIN:</b> 110434</p>
+<p><i class='fa-solid fa-phone'/> <b>ফোন:</b> তথ্য যাচাই করা হয়নি</p>
+<p><i class='fa-solid fa-envelope'/> <b>ইমেইল:</b> তথ্য যাচাই করা হয়নি</p>
+<p><i class='fa-solid fa-clock'/> <b>অফিস সময়:</b> তথ্য যাচাই করা হয়নি</p>
+<div class='map-wrap' style='margin-top:14px'>
+<iframe allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade' src='https://www.google.com/maps?q=Katiadi,+Kishoreganj,+Bangladesh&amp;output=embed' title='Map — Katiadi, Kishoreganj'></iframe>
+</div>
+<p class='form-note'>মানচিত্রটি কাটিয়াদী, কিশোরগঞ্জের সাধারণ অবস্থান দেখায় — কলেজ ভবনের সঠিক পিন যাচাই করা হয়নি।</p>
+</div></div>
+</div>
+<div>
+<div class='card'><div class='card-body'>
+<h3>যোগাযোগ ফর্ম</h3>
+<p>এই ফর্মটি একটি Google Form এমবেডের স্থানধারক। কলেজের আসল Google Form URL বসানোর আগে এটি কাজ করবে না — কোনো ভুয়া ফর্ম URL দেওয়া হয়নি।</p>
+<div class='placeholder-note'><b>সেটআপ:</b> Google Forms-এ একটি ফর্ম তৈরি করুন → Send → Embed (&lt; &gt;) → iframe কোড কপি করুন → নিচের বক্সে বসান। বিস্তারিত SETUP-CONTENT.md-এ।</div>
+<div style='border:2px dashed var(--line);border-radius:12px;padding:28px;text-align:center;color:var(--muted)'>
+<i class='fa-regular fa-envelope-open' style='font-size:32px;color:var(--blue)'/><br/><br/>
+Google Form এখানে এমবেড হবে<br/>
+<span class='form-note'>Replace this box with your real Google Form embed iframe.</span><br/><br/>
+<a class='btn btn-outline' href='/p/contact-us.html'>যোগাযোগ পাতা দেখুন</a>
+</div>
+<h3 style='margin-top:20px'>গুরুত্বপূর্ণ লিংক</h3>
+<ul>
+<li><a href='https://dshe.gov.bd' target='_blank' rel='noopener'>DSHE — dshe.gov.bd</a></li>
+<li><a href='https://educationboard.gov.bd' target='_blank' rel='noopener'>শিক্ষা বোর্ড — educationboard.gov.bd</a></li>
+<li><a href='https://www.nu.ac.bd' target='_blank' rel='noopener'>জাতীয় বিশ্ববিদ্যালয় — nu.ac.bd</a></li>
+<li><a href='https://moedu.gov.bd' target='_blank' rel='noopener'>শিক্ষা মন্ত্রণালয় — moedu.gov.bd</a></li>
+</ul>
+</div></div>
+</div>
+</div>
+</div></section>
+</b:if>
+
+<footer class='site-footer'>
+<div class='container'>
+<div>
+<h3>কাটিয়াদী সরকারি কলেজ</h3>
+<p>কাটিয়াদী, কিশোরগঞ্জ, বাংলাদেশ<br/>EIIN: 110434</p>
+<p class='form-note' style='color:#94a8c8'>ফোন / ইমেইল / প্রতিষ্ঠার সাল — তথ্য যাচাই করা হয়নি।</p>
+<div class='social'>
+<a href='https://www.facebook.com/search/top?q=Katiadi%20Government%20College' target='_blank' rel='noopener' aria-label='Facebook search for the college'><i class='fa-brands fa-facebook-f'/></a>
+<a href='https://www.youtube.com/results?search_query=Katiadi+Government+College' target='_blank' rel='noopener' aria-label='YouTube search for the college'><i class='fa-brands fa-youtube'/></a>
+<a href='mailto:' aria-label='Email — address not verified'><i class='fa-solid fa-envelope'/></a>
+</div>
+<p class='form-note' style='color:#94a8c8'>⚠️ কলেজের অফিসিয়াল Facebook / YouTube পেজ যাচাই করা হয়নি — উপরের লিংকগুলো সার্চ পেজে যায়, অফিসিয়াল পেজে নয়। অফিসিয়াল পেজ পেলে বদলে দিন।</p>
+</div>
+<div>
+<h3>দ্রুত লিংক</h3>
+<ul>
+<li><a href='/p/about-college.html'>কলেজ সম্পর্কে</a></li>
+<li><a href='/p/admission.html'>ভর্তি</a></li>
+<li><a href='/p/departments.html'>বিভাগসমূহ</a></li>
+<li><a href='/p/teachers-staff.html'>শিক্ষক ও কর্মচারী</a></li>
+<li><a href='/p/photo-gallery.html'>ফটো গ্যালারি</a></li>
+</ul>
+</div>
+<div>
+<h3>একাডেমিক</h3>
+<ul>
+<li><a href='/p/class-routine.html'>ক্লাস রুটিন</a></li>
+<li><a href='/p/examination-routine.html'>পরীক্ষার রুটিন</a></li>
+<li><a href='/search/label/Results'>পরীক্ষার ফলাফল</a></li>
+<li><a href='/p/academic-programs.html'>একাডেমিক প্রোগ্রাম</a></li>
+<li><a href='/p/governing-body.html'>গভর্নিং বডি</a></li>
+</ul>
+</div>
+<div>
+<h3>নোটিশ</h3>
+<ul>
+<li><a href='/search/label/General%20Notices'>সাধারণ নোটিশ</a></li>
+<li><a href='/search/label/Admission%20Notices'>ভর্তি নোটিশ</a></li>
+<li><a href='/search/label/Examination%20Notices'>পরীক্ষার নোটিশ</a></li>
+<li><a href='/search/label/Important%20Announcements'>গুরুত্বপূর্ণ ঘোষণা</a></li>
+<li><a href='/search/label/Notice'>সকল নোটিশ</a></li>
+</ul>
+</div>
+</div>
+<div class='footer-bottom'>© 2026 কাটিয়াদী সরকারি কলেজ (EIIN 110434), কাটিয়াদী, কিশোরগঞ্জ। সর্বস্বত্ব সংরক্ষিত। | Powered by Blogger — কনটেন্ট পরিচালনা Blogger অ্যাডমিন থেকে করা হয়; এখানে কোনো ভুয়া লগইন বা অ্যাডমিন ড্যাশবোর্ড নেই।</div>
+</footer>
+
+<b:section class='footer-section' id='footer' showaddelement='yes'>
+<b:widget id='HTML902' locked='false' title='Footer note' type='HTML' version='2'>
+<b:includable id='main'>
+<!-- Footer widgets added in Layout appear here. Leave empty unless needed. -->
+</b:includable>
+</b:widget>
+</b:section>
+
+<script>
+//<![CDATA[
+(function(){
+  var root=document.documentElement;
+  try{var saved=localStorage.getItem('kgc-theme'); if(saved){root.setAttribute('data-theme',saved);}}catch(e){}
+  function toggle(){var cur=root.getAttribute('data-theme')==='dark'?'light':'dark'; root.setAttribute('data-theme',cur); try{localStorage.setItem('kgc-theme',cur);}catch(e){}}
+  ['themeToggle','themeToggleTop'].forEach(function(id){var b=document.getElementById(id); if(b){b.addEventListener('click',toggle);}});
+  var menu=document.getElementById('menuToggle'), nav=document.getElementById('mainNav');
+  if(menu&&nav){menu.addEventListener('click',function(){nav.classList.toggle('open');});}
+})();
+//]]>
+</script>
+</body>
+</html>
