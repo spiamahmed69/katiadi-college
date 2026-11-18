@@ -1,0 +1,372 @@
+{
+  "admissions": [],
+  "contacts": [],
+  "departments": [
+    {
+      "description": "Placeholder — to be confirmed by the college office.",
+      "head": "To be confirmed",
+      "id": "d1",
+      "is_sample": true,
+      "name": "Science",
+      "name_bn": "বিজ্ঞান",
+      "slug": "science"
+    },
+    {
+      "description": "Placeholder — to be confirmed by the college office.",
+      "head": "To be confirmed",
+      "id": "d2",
+      "is_sample": true,
+      "name": "Humanities",
+      "name_bn": "মানবিক",
+      "slug": "humanities"
+    },
+    {
+      "description": "Placeholder — to be confirmed by the college office.",
+      "head": "To be confirmed",
+      "id": "d3",
+      "is_sample": true,
+      "name": "Business Studies",
+      "name_bn": "ব্যবসায় শিক্ষা",
+      "slug": "business-studies"
+    },
+    {
+      "description": "Placeholder — to be confirmed by the college office.",
+      "head": "To be confirmed",
+      "id": "d4",
+      "is_sample": true,
+      "name": "Bangla",
+      "name_bn": "বাংলা",
+      "slug": "bangla"
+    },
+    {
+      "description": "Placeholder — to be confirmed by the college office.",
+      "head": "To be confirmed",
+      "id": "d5",
+      "is_sample": true,
+      "name": "English",
+      "name_bn": "ইংরেজি",
+      "slug": "english"
+    },
+    {
+      "description": "Placeholder — to be confirmed by the college office.",
+      "head": "To be confirmed",
+      "id": "d6",
+      "is_sample": true,
+      "name": "Mathematics",
+      "name_bn": "গণিত",
+      "slug": "mathematics"
+    }
+  ],
+  "documents": [
+    {
+      "category": "Admission",
+      "file_url": "#",
+      "id": "doc1",
+      "title": "SAMPLE — Admission Form (placeholder document)"
+    },
+    {
+      "category": "Examination",
+      "file_url": "#",
+      "id": "doc2",
+      "title": "SAMPLE — Exam Routine Notice (placeholder document)"
+    }
+  ],
+  "gallery": [
+    {
+      "category": "Campus",
+      "id": "g1",
+      "image": "https://images.unsplash.com/photo-1562774053-701939374585?w=1200&q=80",
+      "is_sample": true,
+      "title": "Campus (sample photo)",
+      "title_bn": "ক্যাম্পাস (নমুনা ছবি)"
+    },
+    {
+      "category": "Campus",
+      "id": "g2",
+      "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80",
+      "is_sample": true,
+      "title": "Students (sample photo)",
+      "title_bn": "শিক্ষার্থী (নমুনা ছবি)"
+    },
+    {
+      "category": "Library",
+      "id": "g3",
+      "image": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&q=80",
+      "is_sample": true,
+      "title": "Library (sample photo)",
+      "title_bn": "গ্রন্থাগার (নমুনা ছবি)"
+    },
+    {
+      "category": "Classroom",
+      "id": "g4",
+      "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200&q=80",
+      "is_sample": true,
+      "title": "Classroom (sample photo)",
+      "title_bn": "শ্রেণিকক্ষ (নমুনা ছবি)"
+    }
+  ],
+  "news_events": [
+    {
+      "category": "News",
+      "content": "This is a clearly labelled SAMPLE news item. The college office has not published a real news item here yet.",
+      "date": "2026-11-18",
+      "excerpt": "SAMPLE news item — placeholder only, to be replaced by the college office.",
+      "id": "n1",
+      "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80",
+      "is_sample": true,
+      "slug": "sample-welcome-news",
+      "title": "SAMPLE — Welcome to Katiadi Government College",
+      "title_bn": "নমুনা — কটিয়াদী সরকারি কলেজে স্বাগতম"
+    },
+    {
+      "category": "Event",
+      "content": "This is a clearly labelled SAMPLE event. Date, venue and details are placeholders to be confirmed by the college office.",
+      "date": "2026-11-20",
+      "excerpt": "SAMPLE event — placeholder only.",
+      "id": "n2",
+      "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80",
+      "is_sample": true,
+      "slug": "sample-annual-event",
+      "title": "SAMPLE — Annual Cultural Event (placeholder)",
+      "title_bn": "নমুনা — বার্ষিক সাংস্কৃতিক অনুষ্ঠান"
+    },
+    {
+      "category": "News",
+      "content": "This is a clearly labelled SAMPLE news item about admissions. Real admission information must be confirmed by the college office.",
+      "date": "2026-11-15",
+      "excerpt": "SAMPLE admission news — placeholder only.",
+      "id": "n3",
+      "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=80",
+      "is_sample": true,
+      "slug": "sample-admission-news",
+      "title": "SAMPLE — Admission Notice (placeholder)",
+      "title_bn": "নমুনা — ভর্তি বিজ্ঞপ্তি"
+    }
+  ],
+  "notices": [
+    {
+      "body": "This is a clearly labelled SAMPLE notice. No official notice has been published here yet. Please contact the college office to confirm.",
+      "body_bn": "এটি একটি স্পষ্টভাবে চিহ্নিত নমুনা বিজ্ঞপ্তি।",
+      "category": "General",
+      "date": "2026-11-18",
+      "id": "nt1",
+      "is_sample": true,
+      "title": "SAMPLE — Class Routine Notice (placeholder)",
+      "title_bn": "নমুনা — ক্লাস রুটিন বিজ্ঞপ্তি"
+    },
+    {
+      "body": "This is a clearly labelled SAMPLE notice about examinations. Dates are placeholders.",
+      "category": "Examination",
+      "date": "2026-11-17",
+      "id": "nt2",
+      "is_sample": true,
+      "title": "SAMPLE — Examination Notice (placeholder)",
+      "title_bn": "নমুনা — পরীক্ষার বিজ্ঞপ্তি"
+    },
+    {
+      "body": "This is a clearly labelled SAMPLE notice. Admission dates are placeholders to be confirmed by the college office.",
+      "category": "Admission",
+      "date": "2026-11-16",
+      "id": "nt3",
+      "is_sample": true,
+      "title": "SAMPLE — Admission Notice (placeholder)",
+      "title_bn": "নমুনা — ভর্তি বিজ্ঞপ্তি"
+    }
+  ],
+  "programs": [
+    {
+      "department": "Science",
+      "description": "Placeholder — to be confirmed by the college office.",
+      "duration": "2 years",
+      "id": "p1",
+      "is_sample": true,
+      "level": "HSC",
+      "name": "HSC Science",
+      "name_bn": "এইচএসসি বিজ্ঞান"
+    },
+    {
+      "department": "Humanities",
+      "description": "Placeholder — to be confirmed by the college office.",
+      "duration": "2 years",
+      "id": "p2",
+      "is_sample": true,
+      "level": "HSC",
+      "name": "HSC Humanities",
+      "name_bn": "এইচএসসি মানবিক"
+    },
+    {
+      "department": "Business Studies",
+      "description": "Placeholder — to be confirmed by the college office.",
+      "duration": "2 years",
+      "id": "p3",
+      "is_sample": true,
+      "level": "HSC",
+      "name": "HSC Business Studies",
+      "name_bn": "এইচএসসি ব্যবসায় শিক্ষা"
+    },
+    {
+      "department": "Science",
+      "description": "Placeholder — to be confirmed by the college office.",
+      "duration": "4 years",
+      "id": "p4",
+      "is_sample": true,
+      "level": "Degree (Pass/Honours)",
+      "name": "Degree / Honours (placeholder)",
+      "name_bn": "ডিগ্রি / অনার্স (নমুনা)"
+    }
+  ],
+  "results": [
+    {
+      "exam_name": "SAMPLE — First Term Examination",
+      "gpa": "4.50",
+      "grade": "A",
+      "id": "r1",
+      "is_sample": true,
+      "published": true,
+      "student_id": "DEMO-001",
+      "subject": "Bangla",
+      "year": "2026"
+    },
+    {
+      "exam_name": "SAMPLE — First Term Examination",
+      "gpa": "4.80",
+      "grade": "A+",
+      "id": "r2",
+      "is_sample": true,
+      "published": true,
+      "student_id": "DEMO-001",
+      "subject": "Mathematics",
+      "year": "2026"
+    }
+  ],
+  "routines": [
+    {
+      "class_name": "HSC 1st Year",
+      "day": "Saturday",
+      "id": "rt1",
+      "is_sample": true,
+      "room": "Room 101 (placeholder)",
+      "subject": "Bangla",
+      "teacher": "To be confirmed",
+      "time": "09:00 – 09:45",
+      "title": "SAMPLE — Class Routine",
+      "type": "class"
+    },
+    {
+      "class_name": "HSC 1st Year",
+      "day": "Sunday",
+      "id": "rt2",
+      "is_sample": true,
+      "room": "Room 102 (placeholder)",
+      "subject": "Mathematics",
+      "teacher": "To be confirmed",
+      "time": "10:00 – 10:45",
+      "title": "SAMPLE — Class Routine",
+      "type": "class"
+    },
+    {
+      "class_name": "HSC 2nd Year",
+      "day": "Monday",
+      "id": "rt3",
+      "is_sample": true,
+      "room": "Exam Hall (placeholder)",
+      "subject": "English",
+      "teacher": "To be confirmed",
+      "time": "10:00 – 13:00",
+      "title": "SAMPLE — Exam Routine",
+      "type": "exam"
+    }
+  ],
+  "settings": {
+    "address": "Katiadi, Kishoreganj, Bangladesh",
+    "contactEmail": "info@katiadi-college.edu.bd (placeholder — to be confirmed)",
+    "contactPhone": "+880-1XXX-XXXXXX (placeholder — to be confirmed)",
+    "description": "Katiadi Government College, Katiadi, Kishoreganj, Bangladesh. EIIN 110434. Official website — Bengali and English.",
+    "eiin": "110434",
+    "established": "To be confirmed",
+    "facebook": "",
+    "logoText": "KGC",
+    "principalName": "To be confirmed — principal's name not yet verified",
+    "seoDescription": "Katiadi Government College, Katiadi, Kishoreganj — EIIN 110434. Official college website.",
+    "seoTitle": "Katiadi Government College | কটিয়াদী সরকারি কলেজ — EIIN 110434",
+    "siteName": "Katiadi Government College",
+    "siteNameBn": "কটিয়াদী সরকারি কলেজ",
+    "tagline": "Knowledge • Discipline • Progress",
+    "youtube": ""
+  },
+  "students": [
+    {
+      "class_name": "HSC 1st Year",
+      "department": "Science",
+      "email": "demo@katiadi.edu.bd",
+      "id": "s-demo",
+      "name": "Demo Student",
+      "name_bn": "ডেমো শিক্ষার্থী",
+      "phone": "",
+      "roll": "01",
+      "section": "A",
+      "session_year": "2026–27",
+      "student_id": "DEMO-001"
+    }
+  ],
+  "teachers": [
+    {
+      "bio": "Placeholder — teacher details to be confirmed by the college office.",
+      "department": "Science",
+      "designation": "Lecturer (placeholder)",
+      "email": "",
+      "id": "t1",
+      "is_sample": true,
+      "name": "To be confirmed",
+      "name_bn": "নিশ্চিত করা হয়নি",
+      "phone": "",
+      "photo": ""
+    },
+    {
+      "bio": "Placeholder — teacher details to be confirmed by the college office.",
+      "department": "Humanities",
+      "designation": "Lecturer (placeholder)",
+      "email": "",
+      "id": "t2",
+      "is_sample": true,
+      "name": "To be confirmed",
+      "name_bn": "নিশ্চিত করা হয়নি",
+      "phone": "",
+      "photo": ""
+    },
+    {
+      "bio": "Placeholder — teacher details to be confirmed by the college office.",
+      "department": "Business Studies",
+      "designation": "Lecturer (placeholder)",
+      "email": "",
+      "id": "t3",
+      "is_sample": true,
+      "name": "To be confirmed",
+      "name_bn": "নিশ্চিত করা হয়নি",
+      "phone": "",
+      "photo": ""
+    },
+    {
+      "bio": "Placeholder — teacher details to be confirmed by the college office.",
+      "department": "Mathematics",
+      "designation": "Lecturer (placeholder)",
+      "email": "",
+      "id": "t4",
+      "is_sample": true,
+      "name": "To be confirmed",
+      "name_bn": "নিশ্চিত করা হয়নি",
+      "phone": "",
+      "photo": ""
+    }
+  ],
+  "users": [
+    {
+      "createdAt": "2026-11-18T00:00:00Z",
+      "email": "demo@katiadi.edu.bd",
+      "id": "u-demo",
+      "name": "Demo Student",
+      "role": "student",
+      "student_id": "DEMO-001"
+    }
+  ]
+}
